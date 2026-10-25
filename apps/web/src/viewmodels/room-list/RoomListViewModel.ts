@@ -39,6 +39,7 @@ import { hasCreateRoomRights } from "./utils";
 import { keepIfSame } from "../../utils/keepIfSame";
 import { DefaultTagID } from "../../stores/room-list-v3/skip-list/tag";
 import { RoomListSectionHeaderViewModel } from "./RoomListSectionHeaderViewModel";
+import { RoomListUnreadThreadsViewModel } from "./RoomListUnreadThreadsViewModel";
 import {
     getCustomSectionData,
     isCustomSectionTag,
@@ -208,6 +209,12 @@ export class RoomListViewModel
      */
     private previewRoom?: Room;
 
+    /**
+     * Backs the "Unread threads" section shown above the room sections. Only created when the lab
+     * flag is on. See {@link unreadThreads}.
+     */
+    private unreadThreadsViewModel?: RoomListUnreadThreadsViewModel;
+
     public constructor(props: RoomListViewModelProps) {
         const activeSpace = props.spaceStore.activeSpaceRoom;
 
@@ -244,6 +251,12 @@ export class RoomListViewModel
 
         // Build initial roomsMap from roomsResult
         this.updateRoomsMap(roomsResult);
+
+        if (SettingsStore.getValue("feature_room_list_unread_threads")) {
+            this.unreadThreadsViewModel = this.disposables.track(
+                new RoomListUnreadThreadsViewModel({ client: props.client, spaceStore: props.spaceStore }),
+            );
+        }
 
         // Subscribe to room list updates
         this.disposables.trackListener(RoomListStoreV3.instance, RoomListStoreV3Event.ListsUpdate, this.onListsUpdate);
@@ -440,6 +453,15 @@ export class RoomListViewModel
         }
         this.onShowSectionsChange();
     };
+
+    /**
+     * The view model behind the unread threads section, or nothing when the lab flag is off or a
+     * filter is narrowing the list. A filter is a request to see one kind of room, and the section
+     * lists threads, so it has no part to play then.
+     */
+    private get unreadThreads(): RoomListUnreadThreadsViewModel | undefined {
+        return this.activeFilter === undefined ? this.unreadThreadsViewModel : undefined;
+    }
 
     /**
      * Add rooms from the RoomsResult to the roomsMap for quick lookup.
@@ -1030,6 +1052,7 @@ export class RoomListViewModel
             roomListState: keepIfSame(this.snapshot.current.roomListState, roomListState),
             sections: keepIfSame(previousSections, viewSections),
             isFlatList,
+            unreadThreads: this.unreadThreads,
         });
 
         this.notifyCollapseState(isFlatList);
