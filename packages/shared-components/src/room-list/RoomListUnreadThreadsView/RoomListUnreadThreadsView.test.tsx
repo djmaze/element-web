@@ -23,6 +23,17 @@ import { Flex } from "../../core/utils/Flex";
 const { Default, Collapsed, WithMention, WithHiddenThreads, RootOnly, WithoutThreadPreview, Empty } =
     composeStories(stories);
 
+const onToggleExpanded = vi.fn();
+const onOpenThread = vi.fn();
+
+class TestViewModel
+    extends MockViewModel<RoomListUnreadThreadsViewSnapshot>
+    implements RoomListUnreadThreadsViewActions
+{
+    public onToggleExpanded = onToggleExpanded;
+    public onOpenThread = onOpenThread;
+}
+
 describe("RoomListUnreadThreadsView", () => {
     beforeEach(() => {
         vi.clearAllMocks();
@@ -66,17 +77,6 @@ describe("RoomListUnreadThreadsView", () => {
     });
 
     describe("User interactions", () => {
-        const onToggleExpanded = vi.fn();
-        const onOpenThread = vi.fn();
-
-        class TestViewModel
-            extends MockViewModel<RoomListUnreadThreadsViewSnapshot>
-            implements RoomListUnreadThreadsViewActions
-        {
-            public onToggleExpanded = onToggleExpanded;
-            public onOpenThread = onOpenThread;
-        }
-
         const snapshot: RoomListUnreadThreadsViewSnapshot = {
             isExpanded: true,
             threads: [
@@ -201,6 +201,53 @@ describe("RoomListUnreadThreadsView", () => {
             expect(rowBox.width).toBe(320);
             // Mirrored insets: the notification sits as far in from the right as the avatar does from the left.
             expect(avatar.left - rowBox.left).toBe(rowBox.right - pill.right);
+        });
+
+        it("shortens long previews instead of running under the notification", () => {
+            const host = document.createElement("div");
+            host.style.width = "320px";
+            document.body.append(host);
+
+            const vm = new TestViewModel({
+                isExpanded: true,
+                threads: [
+                    {
+                        id: "!room:example.org:$thread1",
+                        threadId: "$thread1",
+                        room: { roomId: "!room:example.org" },
+                        roomName: "A room name long enough to need truncating as well",
+                        threadSenderName: "Alice",
+                        threadPreview: "Anyone tried the new room list? It is worth a look",
+                        latestSenderName: "Bob",
+                        latestPreview: "A very long message that cannot possibly fit on one line here",
+                        notification: {
+                            hasAnyNotificationOrActivity: true,
+                            isUnsentMessage: false,
+                            invited: false,
+                            isMention: false,
+                            isActivityNotification: false,
+                            isNotification: true,
+                            hasUnreadCount: true,
+                            count: 3,
+                            muted: false,
+                        },
+                    },
+                ],
+                hiddenThreadCount: 0,
+            });
+            render(<RoomListUnreadThreadsView vm={vm} renderAvatar={() => <div data-testid="avatar" />} />, {
+                container: host,
+            });
+
+            const row = screen.getByTestId("unread-thread-row");
+            const pillLeft = (row.lastElementChild as HTMLElement).getBoundingClientRect().left;
+
+            for (const testId of ["thread-preview-line", "latest-preview-line"]) {
+                const line = within(row).getByTestId(testId);
+                // The row clips the text, it does not paint it over the notification.
+                expect(line.scrollWidth).toBeGreaterThan(line.clientWidth);
+                expect(line.getBoundingClientRect().right).toBeLessThanOrEqual(pillLeft);
+            }
         });
     });
 });

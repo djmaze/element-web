@@ -111,6 +111,7 @@ thread's first message and its newest one.
 
     .container {
         flex: 1;
+        /* Without this the nowrap preview lines set a min-content width the row cannot shrink past. */
         min-width: 0;
         padding: 0 var(--cpd-space-2x);
         border-radius: 8px;
