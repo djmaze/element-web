@@ -18,6 +18,7 @@ import {
     type RoomListUnreadThreadsViewSnapshot,
 } from "./RoomListUnreadThreadsView";
 import { MockViewModel } from "../../core/viewmodel/MockViewModel";
+import { Flex } from "../../core/utils/Flex";
 
 const { Default, Collapsed, WithMention, WithHiddenThreads, RootOnly, WithoutThreadPreview, Empty } =
     composeStories(stories);
@@ -168,6 +169,38 @@ describe("RoomListUnreadThreadsView", () => {
         it("hides the notification decoration from assistive technology", () => {
             renderView();
             expect(screen.getByTestId("unread-thread-row").querySelector("[aria-hidden='true']")).toBeInTheDocument();
+        });
+    });
+
+    describe("Placement in the room list", () => {
+        it("spans the list so the notification sits at its trailing edge", () => {
+            // RoomListView nests this section in a column Flex whose align-items resolves to start
+            // through the --mx-flex-align it inherits from an ancestor Flex. A section without a
+            // width of its own then shrinks to its content, and the notification lands beside the
+            // text instead of at the panel edge where the room rows put theirs.
+            const host = document.createElement("div");
+            host.style.width = "320px";
+            host.style.setProperty("--mx-flex-align", "start");
+            document.body.append(host);
+
+            render(
+                <Flex direction="column">
+                    <Default />
+                </Flex>,
+                { container: host },
+            );
+
+            const section = screen.getByTestId("unread-threads-section");
+            // The Default story shows more than one thread; one row is enough to check the insets.
+            const row = screen.getAllByTestId("unread-thread-row")[0];
+            const rowBox = row.getBoundingClientRect();
+            const avatar = row.firstElementChild!.getBoundingClientRect();
+            const pill = row.lastElementChild!.getBoundingClientRect();
+
+            expect(section.getBoundingClientRect().width).toBe(320);
+            expect(rowBox.width).toBe(320);
+            // Mirrored insets: the notification sits as far in from the right as the avatar does from the left.
+            expect(avatar.left - rowBox.left).toBe(rowBox.right - pill.right);
         });
     });
 });
