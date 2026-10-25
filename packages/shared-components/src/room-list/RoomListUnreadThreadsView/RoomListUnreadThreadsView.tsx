@@ -174,6 +174,7 @@ export const RoomListUnreadThreadsView = memo(function RoomListUnreadThreadsView
                             <Flex
                                 direction="column"
                                 className={styles.container}
+                                align="stretch"
                                 justify="center"
                                 gap="var(--cpd-space-0-5x)"
                             >

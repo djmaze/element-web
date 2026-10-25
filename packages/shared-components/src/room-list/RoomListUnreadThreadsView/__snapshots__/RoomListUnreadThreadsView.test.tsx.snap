@@ -56,7 +56,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a mention 1`]
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -129,7 +129,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a mention 1`]
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -237,7 +237,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a thread whos
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -334,7 +334,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a thread with
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -431,7 +431,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the caption f
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -588,7 +588,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the default s
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -650,7 +650,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the default s
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
@@ -712,7 +712,7 @@ exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the default s
         </div>
         <div
           class="Flex-module_flex RoomListUnreadThreadsView-module_container"
-          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: stretch; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
         >
           <span
             class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
