@@ -1555,6 +1555,8 @@
         "notifications": "Benachrichtigungen in der Chat-Kopfzeile einschalten",
         "render_reaction_images": "Benutzerdefinierte Bilder in Reaktionen anzeigen",
         "render_reaction_images_description": "Werden manchmal auch als „benutzerdefinierte Emojis“ bezeichnet.",
+        "room_list_unread_threads": "Ungelesene Threads in der Chatliste",
+        "room_list_unread_threads_description": "Einen Abschnitt mit ungelesenen Threads oben in der Chatliste anzeigen.",
         "sliding_sync": "Sliding-Sync-Modus",
         "sliding_sync_description": "In aktiver Entwicklung, kann nicht deaktiviert werden. Derzeit nicht mit Element Call kompatibel.",
         "sliding_sync_disabled_notice": "Zum Deaktivieren erneut anmelden",

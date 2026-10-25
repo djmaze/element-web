@@ -1582,6 +1582,8 @@
         "notifications": "Enable the notifications panel in the room header",
         "render_reaction_images": "Render custom images in reactions",
         "render_reaction_images_description": "Sometimes referred to as \"custom emojis\".",
+        "room_list_unread_threads": "Unread threads in the room list",
+        "room_list_unread_threads_description": "Show a section of unread threads at the top of the room list.",
         "sliding_sync": "Sliding Sync mode",
         "sliding_sync_description": "Under active development, cannot be disabled. Currently, not compatible with Element Call.",
         "sliding_sync_disabled_notice": "Sign in again to disable",
