@@ -15,6 +15,7 @@ import { VirtualizedRoomListView, type RoomListViewState } from "../VirtualizedR
 import { type Room, type RoomListItemViewModel } from "../VirtualizedRoomListView/RoomListItemWrapper/RoomListItemView";
 import { type RoomListSectionHeaderViewModel } from "../VirtualizedRoomListView/RoomListSectionHeaderView";
 import { type ToastType, RoomListToast } from "./RoomListToast";
+import { RoomListUnreadThreadsView, type RoomListUnreadThreadsViewModel } from "../RoomListUnreadThreadsView";
 import styles from "./RoomListView.module.css";
 import { Flex } from "../../core/utils/Flex";
 import { AutoHideScrollbar } from "../../core/utils/Scrollbar";
@@ -50,6 +51,12 @@ export type RoomListViewSnapshot = {
     canCreateRoom?: boolean;
     /** Whether the room list is displayed as a flat list */
     isFlatList: boolean;
+    /**
+     * View model for the "Unread threads" section, displayed above the room sections. Undefined
+     * when the feature is off, when a filter is narrowing the list, or when nothing is unread: the
+     * section then takes no part in the panel at all.
+     */
+    unreadThreads?: RoomListUnreadThreadsViewModel;
     /**
      * The single toast to display (if any). The view model owns which toast wins when more
      * than one applies (e.g. a transient "chat_moved" event toast takes precedence over the
@@ -148,6 +155,9 @@ export const RoomListView: React.FC<RoomListViewProps> = ({ vm, renderAvatar, on
                 />
             </div>
             <Flex direction="column" className={styles.list}>
+                {snapshot.unreadThreads && (
+                    <RoomListUnreadThreadsView vm={snapshot.unreadThreads} renderAvatar={renderAvatar} />
+                )}
                 <AutoHideScrollbar className={styles.scrollbar}>
                     {listBody}
                     {snapshot.toast && (

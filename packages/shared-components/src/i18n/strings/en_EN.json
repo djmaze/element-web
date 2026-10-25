@@ -42,6 +42,10 @@
         "attachment": "Attachment",
         "encryption_enabled": "Encryption enabled",
         "loading": "Loading…",
+        "n_threads": {
+            "one": "%(count)s thread",
+            "other": "%(count)s threads"
+        },
         "options": "Options",
         "preferences": "Preferences",
         "state_encryption_enabled": "Experimental state encryption enabled"
@@ -267,7 +271,34 @@
             "home": "Space home",
             "space_settings": "Space settings"
         },
-        "unread_messages": "Unread messages"
+        "unread_messages": "Unread messages",
+        "unread_threads": {
+            "a11y": {
+                "default": "Open the thread in %(roomName)s started by %(threadSenderName)s: %(threadPreview)s.",
+                "default_no_thread": "Open a thread in %(roomName)s.",
+                "mention": {
+                    "one": "Open the thread in %(roomName)s started by %(threadSenderName)s: %(threadPreview)s, with 1 unread mention.",
+                    "other": "Open the thread in %(roomName)s started by %(threadSenderName)s: %(threadPreview)s, with %(count)s unread messages including mentions."
+                },
+                "mention_no_thread": {
+                    "one": "Open a thread in %(roomName)s with 1 unread mention.",
+                    "other": "Open a thread in %(roomName)s with %(count)s unread messages including mentions."
+                },
+                "unread": {
+                    "one": "Open the thread in %(roomName)s started by %(threadSenderName)s: %(threadPreview)s, with 1 unread message.",
+                    "other": "Open the thread in %(roomName)s started by %(threadSenderName)s: %(threadPreview)s, with %(count)s unread messages."
+                },
+                "unread_no_thread": {
+                    "one": "Open a thread in %(roomName)s with 1 unread message.",
+                    "other": "Open a thread in %(roomName)s with %(count)s unread messages."
+                }
+            },
+            "more": {
+                "one": "%(count)s more unread thread",
+                "other": "%(count)s more unread threads"
+            },
+            "title": "Unread threads"
+        }
     },
     "status": {
         "set_status": {

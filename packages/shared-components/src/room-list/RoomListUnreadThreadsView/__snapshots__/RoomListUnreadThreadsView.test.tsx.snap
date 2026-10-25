@@ -1,0 +1,765 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a mention 1`] = `
+<div>
+  <section
+    class="RoomListUnreadThreadsView-module_section"
+    data-testid="unread-threads-section"
+  >
+    <button
+      aria-controls="roomListUnreadThreadsList"
+      aria-expanded="true"
+      class="Flex-module_flex RoomListUnreadThreadsView-module_header"
+      style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
+    >
+      <div
+        class="Flex-module_flex"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+      >
+        <svg
+          class="RoomListUnreadThreadsView-module_chevron"
+          fill="var(--cpd-color-icon-secondary)"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.7 17.3a.95.95 0 0 1-.275-.7q0-.425.275-.7l3.9-3.9-3.9-3.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375a.9.9 0 0 1-.213.325l-4.6 4.6a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275"
+          />
+        </svg>
+        <span
+          class="RoomListUnreadThreadsView-module_title"
+        >
+          Unread threads
+        </span>
+      </div>
+    </button>
+    <div
+      aria-label="Unread threads"
+      class="RoomListUnreadThreadsView-module_rows"
+      id="roomListUnreadThreadsList"
+      role="group"
+    >
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 1 unread mention."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <svg
+              fill="var(--cpd-color-icon-accent-primary)"
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 4a8 8 0 1 0 0 16 1 1 0 1 1 0 2C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10v1.5a3.5 3.5 0 0 1-6.396 1.966A5 5 0 1 1 17 12v1.5a1.5 1.5 0 0 0 3 0V12a8 8 0 0 0-8-8m3 8a3 3 0 1 0-6 0 3 3 0 0 0 6 0"
+              />
+            </svg>
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              1
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a thread whose first message is unknown 1`] = `
+<div>
+  <section
+    class="RoomListUnreadThreadsView-module_section"
+    data-testid="unread-threads-section"
+  >
+    <button
+      aria-controls="roomListUnreadThreadsList"
+      aria-expanded="true"
+      class="Flex-module_flex RoomListUnreadThreadsView-module_header"
+      style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
+    >
+      <div
+        class="Flex-module_flex"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+      >
+        <svg
+          class="RoomListUnreadThreadsView-module_chevron"
+          fill="var(--cpd-color-icon-secondary)"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.7 17.3a.95.95 0 0 1-.275-.7q0-.425.275-.7l3.9-3.9-3.9-3.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375a.9.9 0 0 1-.213.325l-4.6 4.6a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275"
+          />
+        </svg>
+        <span
+          class="RoomListUnreadThreadsView-module_title"
+        >
+          Unread threads
+        </span>
+      </div>
+    </button>
+    <div
+      aria-label="Unread threads"
+      class="RoomListUnreadThreadsView-module_rows"
+      id="roomListUnreadThreadsList"
+      role="group"
+    >
+      <button
+        aria-label="Open a thread in Element Web Contributors with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`RoomListUnreadThreadsView > Storybook snapshots > renders a thread with no replies 1`] = `
+<div>
+  <section
+    class="RoomListUnreadThreadsView-module_section"
+    data-testid="unread-threads-section"
+  >
+    <button
+      aria-controls="roomListUnreadThreadsList"
+      aria-expanded="true"
+      class="Flex-module_flex RoomListUnreadThreadsView-module_header"
+      style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
+    >
+      <div
+        class="Flex-module_flex"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+      >
+        <svg
+          class="RoomListUnreadThreadsView-module_chevron"
+          fill="var(--cpd-color-icon-secondary)"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.7 17.3a.95.95 0 0 1-.275-.7q0-.425.275-.7l3.9-3.9-3.9-3.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375a.9.9 0 0 1-.213.325l-4.6 4.6a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275"
+          />
+        </svg>
+        <span
+          class="RoomListUnreadThreadsView-module_title"
+        >
+          Unread threads
+        </span>
+      </div>
+    </button>
+    <div
+      aria-label="Unread threads"
+      class="RoomListUnreadThreadsView-module_rows"
+      id="roomListUnreadThreadsList"
+      role="group"
+    >
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the caption for threads the section does not show 1`] = `
+<div>
+  <section
+    class="RoomListUnreadThreadsView-module_section"
+    data-testid="unread-threads-section"
+  >
+    <button
+      aria-controls="roomListUnreadThreadsList"
+      aria-expanded="true"
+      class="Flex-module_flex RoomListUnreadThreadsView-module_header"
+      style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
+    >
+      <div
+        class="Flex-module_flex"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+      >
+        <svg
+          class="RoomListUnreadThreadsView-module_chevron"
+          fill="var(--cpd-color-icon-secondary)"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.7 17.3a.95.95 0 0 1-.275-.7q0-.425.275-.7l3.9-3.9-3.9-3.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375a.9.9 0 0 1-.213.325l-4.6 4.6a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275"
+          />
+        </svg>
+        <span
+          class="RoomListUnreadThreadsView-module_title"
+        >
+          Unread threads
+        </span>
+      </div>
+    </button>
+    <div
+      aria-label="Unread threads"
+      class="RoomListUnreadThreadsView-module_rows"
+      id="roomListUnreadThreadsList"
+      role="group"
+    >
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+      <div
+        class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_more"
+      >
+        7 more unread threads
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the collapsed state 1`] = `
+<div>
+  <section
+    class="RoomListUnreadThreadsView-module_section"
+    data-testid="unread-threads-section"
+  >
+    <button
+      aria-controls="roomListUnreadThreadsList"
+      aria-expanded="false"
+      class="Flex-module_flex RoomListUnreadThreadsView-module_header"
+      style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
+    >
+      <div
+        class="Flex-module_flex"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+      >
+        <svg
+          class="RoomListUnreadThreadsView-module_chevron"
+          fill="var(--cpd-color-icon-secondary)"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.7 17.3a.95.95 0 0 1-.275-.7q0-.425.275-.7l3.9-3.9-3.9-3.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375a.9.9 0 0 1-.213.325l-4.6 4.6a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275"
+          />
+        </svg>
+        <span
+          class="RoomListUnreadThreadsView-module_title"
+        >
+          Unread threads
+        </span>
+      </div>
+      <span
+        class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_count"
+      >
+        3 threads
+      </span>
+    </button>
+  </section>
+</div>
+`;
+
+exports[`RoomListUnreadThreadsView > Storybook snapshots > renders the default state 1`] = `
+<div>
+  <section
+    class="RoomListUnreadThreadsView-module_section"
+    data-testid="unread-threads-section"
+  >
+    <button
+      aria-controls="roomListUnreadThreadsList"
+      aria-expanded="true"
+      class="Flex-module_flex RoomListUnreadThreadsView-module_header"
+      style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: space-between; --mx-flex-gap: var(--cpd-space-2x); --mx-flex-wrap: nowrap;"
+    >
+      <div
+        class="Flex-module_flex"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+      >
+        <svg
+          class="RoomListUnreadThreadsView-module_chevron"
+          fill="var(--cpd-color-icon-secondary)"
+          height="24px"
+          viewBox="0 0 24 24"
+          width="24px"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M8.7 17.3a.95.95 0 0 1-.275-.7q0-.425.275-.7l3.9-3.9-3.9-3.9a.95.95 0 0 1-.275-.7q0-.425.275-.7a.95.95 0 0 1 .7-.275q.425 0 .7.275l4.6 4.6q.15.15.213.325.062.175.062.375t-.062.375a.9.9 0 0 1-.213.325l-4.6 4.6a.95.95 0 0 1-.7.275.95.95 0 0 1-.7-.275"
+          />
+        </svg>
+        <span
+          class="RoomListUnreadThreadsView-module_title"
+        >
+          Unread threads
+        </span>
+      </div>
+    </button>
+    <div
+      aria-label="Unread threads"
+      class="RoomListUnreadThreadsView-module_rows"
+      id="roomListUnreadThreadsList"
+      role="group"
+    >
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+      <button
+        aria-label="Open the thread in Element Web Contributors started by Alice: Anyone tried the new room list?, with 3 unread messages."
+        class="Flex-module_flex RoomListUnreadThreadsView-module_threadItem"
+        data-testid="unread-thread-row"
+        style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: stretch; --mx-flex-justify: start; --mx-flex-gap: var(--cpd-space-3x); --mx-flex-wrap: nowrap;"
+      >
+        <div
+          class="RoomListUnreadThreadsView-module_avatar"
+        >
+          <div
+            data-testid="avatar"
+          />
+        </div>
+        <div
+          class="Flex-module_flex RoomListUnreadThreadsView-module_container"
+          style="--mx-flex-display: flex; --mx-flex-direction: column; --mx-flex-align: start; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-0-5x); --mx-flex-wrap: nowrap;"
+        >
+          <span
+            class="_typography_6v6n8_153 _font-body-md-semibold_6v6n8_55 RoomListUnreadThreadsView-module_roomName"
+          >
+            Element Web Contributors
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_threadPreview"
+            data-testid="thread-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Alice: 
+            </span>
+            Anyone tried the new room list?
+          </span>
+          <span
+            class="_typography_6v6n8_153 _font-body-sm-regular_6v6n8_31 RoomListUnreadThreadsView-module_latestPreview"
+            data-testid="latest-preview-line"
+          >
+            <span
+              class="_typography_6v6n8_153 _font-body-sm-medium_6v6n8_41"
+            >
+              Bob: 
+            </span>
+            The new room list looks great
+          </span>
+        </div>
+        <div
+          aria-hidden="true"
+          class="RoomListUnreadThreadsView-module_notificationDecoration"
+        >
+          <div
+            class="Flex-module_flex"
+            data-testid="notification-decoration"
+            style="--mx-flex-display: flex; --mx-flex-direction: row; --mx-flex-align: center; --mx-flex-justify: center; --mx-flex-gap: var(--cpd-space-1x); --mx-flex-wrap: nowrap;"
+          >
+            <span
+              class="_unread-counter_19zi2_8"
+            >
+              3
+            </span>
+          </div>
+        </div>
+      </button>
+    </div>
+  </section>
+</div>
+`;
