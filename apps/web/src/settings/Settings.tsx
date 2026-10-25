@@ -233,6 +233,7 @@ export interface Settings {
     "feature_retention": IFeature;
     "feature_new_timeline": IFeature;
     "feature_ask_to_join": IFeature;
+    "feature_room_list_unread_threads": IFeature;
     "feature_notifications": IFeature;
     "feature_msc4362_encrypted_state_events": IFeature;
     "feature_user_status": IFeature;
@@ -754,6 +755,15 @@ export const SETTINGS: Settings = {
         labsGroup: LabGroup.Rooms,
         default: false,
         displayName: _td("labs|ask_to_join"),
+        supportedLevels: LEVELS_DEVICE_ONLY_SETTINGS_WITH_CONFIG_PRIORITISED,
+        supportedLevelsAreOrdered: true,
+    },
+    "feature_room_list_unread_threads": {
+        isFeature: true,
+        labsGroup: LabGroup.Threads,
+        default: false,
+        displayName: _td("labs|room_list_unread_threads"),
+        description: _td("labs|room_list_unread_threads_description"),
         supportedLevels: LEVELS_DEVICE_ONLY_SETTINGS_WITH_CONFIG_PRIORITISED,
         supportedLevelsAreOrdered: true,
     },

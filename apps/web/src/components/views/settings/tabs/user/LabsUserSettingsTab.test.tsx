@@ -50,7 +50,17 @@ describe("<LabsUserSettingsTab />", () => {
 
         // non-beta labs section
         expect(screen.getByText("Early previews")).toBeInTheDocument();
+        // one subsection per lab group holding at least one flag
         const labsSections = container.getElementsByClassName("mx_SettingsSubsection");
-        expect(labsSections).toHaveLength(8);
+        expect(labsSections).toHaveLength(9);
+    });
+
+    it("groups a lab feature under its lab group heading", () => {
+        SdkConfig.add({ show_labs_settings: true });
+        render(getComponent());
+
+        const heading = screen.getByRole("heading", { name: "Threads" });
+        const group = heading.closest(".mx_SettingsSubsection")!;
+        expect(group).toContainElement(screen.getByText("Unread threads in the room list"));
     });
 });
