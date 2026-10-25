@@ -16,7 +16,8 @@ import { stubClient } from "test-utils";
 import { populateThread } from "test-utils/threads";
 import { NotificationCountType, PendingEventOrdering, Room } from "matrix-js-sdk/src/matrix";
 
-import { ThreadsActivityCentre, threadDecorationProps } from "./ThreadsActivityCentre";
+import { ThreadsActivityCentre } from "./ThreadsActivityCentre";
+import { threadDecorationProps } from "../../../../utils/threads/threadDecoration";
 import { NotificationLevel } from "../../../../stores/notifications/NotificationLevel";
 import { MatrixClientPeg } from "../../../../MatrixClientPeg";
 import MatrixClientContext from "../../../../contexts/MatrixClientContext";

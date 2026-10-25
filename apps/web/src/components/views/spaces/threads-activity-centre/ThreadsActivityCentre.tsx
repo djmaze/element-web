@@ -8,7 +8,7 @@
 
 import React, { type JSX, useState } from "react";
 import { Menu, MenuItem, NavBar, NavItem, Text } from "@vector-im/compound-web";
-import { NotificationDecoration, type NotificationDecorationData } from "@element-hq/web-shared-components";
+import { NotificationDecoration } from "@element-hq/web-shared-components";
 
 import { ThreadsActivityCentreButton } from "./ThreadsActivityCentreButton";
 import { _t } from "../../../../languageHandler";
@@ -22,6 +22,7 @@ import { type ThreadData, type UnreadThreadRooms, useUnreadThreadRooms } from ".
 import { NotificationLevel } from "../../../../stores/notifications/NotificationLevel";
 import { MessagePreviewStore } from "../../../../stores/message-preview/MessagePreviewStore";
 import { getSenderName } from "../../../../stores/message-preview/previews/utils";
+import { threadDecorationProps } from "../../../../utils/threads/threadDecoration";
 import PosthogTrackers from "../../../../PosthogTrackers";
 import { getKeyBindingsManager } from "../../../../KeyBindingsManager";
 import { KeyBindingAction } from "../../../../accessibility/KeyboardShortcuts";
@@ -159,37 +160,6 @@ interface ThreadsActivityThreadRow {
      * Callback when the user clicks on the row.
      */
     onClick: () => void;
-}
-
-/**
- * Map a thread's unread state onto the notification decoration shared with the room list, so a
- * mention, a counted notification and bare activity are told apart by shape and not only by colour.
- *
- * The levels are mutually exclusive, mirroring {@link RoomNotificationState}'s `isMention` /
- * `isNotification` / `isActivityNotification` getters.
- *
- * @param level - the thread's notification level
- * @param count - the server-reported notification count, 0 for a local-only unread
- * @param muted - whether the thread's room is muted
- */
-export function threadDecorationProps(
-    level: NotificationLevel,
-    count: number,
-    muted: boolean,
-): NotificationDecorationData {
-    return {
-        // Rows only exist for threads we have already decided are unread.
-        hasAnyNotificationOrActivity: true,
-        isMention: level === NotificationLevel.Highlight,
-        isNotification: level === NotificationLevel.Notification,
-        isActivityNotification: level === NotificationLevel.Activity,
-        hasUnreadCount: count > 0,
-        count,
-        muted,
-        // evaluateThreadUnread never yields NotificationLevel.Unsent, and threads can't be invites.
-        isUnsentMessage: false,
-        invited: false,
-    };
 }
 
 /**
