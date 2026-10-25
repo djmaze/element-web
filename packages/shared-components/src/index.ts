@@ -83,6 +83,7 @@ export * from "./room-list/SectionCreationView";
 export * from "./room-list/RoomListView";
 export * from "./room-list/VirtualizedRoomListView/RoomListItemWrapper/RoomListItemView";
 export * from "./room-list/RoomListPrimaryFilters";
+export * from "./room-list/RoomListUnreadThreadsView";
 export * from "./room-list/VirtualizedRoomListView";
 export * from "./room-list/VirtualizedRoomListView/RoomListSectionHeaderView";
 export * from "./room-list/VirtualizedRoomListView/RoomListItemWrapper";

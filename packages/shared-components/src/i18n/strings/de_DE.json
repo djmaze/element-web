@@ -39,6 +39,10 @@
         "attachment": "Anhang",
         "encryption_enabled": "Verschlüsselung aktiviert",
         "loading": "Wird geladen …",
+        "n_threads": {
+            "one": "%(count)s Thread",
+            "other": "%(count)s Threads"
+        },
         "options": "Optionen",
         "preferences": "Einstellungen",
         "state_encryption_enabled": "Experimentelle State-Verschlüsselung aktiviert"
@@ -249,7 +253,34 @@
             "home": "Space Home",
             "space_settings": "Space Einstellungen"
         },
-        "unread_messages": "Ungelesene Nachrichten"
+        "unread_messages": "Ungelesene Nachrichten",
+        "unread_threads": {
+            "a11y": {
+                "default": "Öffne den Thread in %(roomName)s von %(threadSenderName)s: %(threadPreview)s.",
+                "default_no_thread": "Öffne einen Thread in %(roomName)s.",
+                "mention": {
+                    "one": "Öffne den Thread in %(roomName)s von %(threadSenderName)s: %(threadPreview)s, mit einer ungelesenen Erwähnung.",
+                    "other": "Öffne den Thread in %(roomName)s von %(threadSenderName)s: %(threadPreview)s, mit %(count)s ungelesenen Nachrichten einschließlich Erwähnungen."
+                },
+                "mention_no_thread": {
+                    "one": "Öffne einen Thread in %(roomName)s mit einer ungelesenen Erwähnung.",
+                    "other": "Öffne einen Thread in %(roomName)s mit %(count)s ungelesenen Nachrichten einschließlich Erwähnungen."
+                },
+                "unread": {
+                    "one": "Öffne den Thread in %(roomName)s von %(threadSenderName)s: %(threadPreview)s, mit einer ungelesenen Nachricht.",
+                    "other": "Öffne den Thread in %(roomName)s von %(threadSenderName)s: %(threadPreview)s, mit %(count)s ungelesenen Nachrichten."
+                },
+                "unread_no_thread": {
+                    "one": "Öffne einen Thread in %(roomName)s mit einer ungelesenen Nachricht.",
+                    "other": "Öffne einen Thread in %(roomName)s mit %(count)s ungelesenen Nachrichten."
+                }
+            },
+            "more": {
+                "one": "%(count)s weiterer ungelesener Thread",
+                "other": "%(count)s weitere ungelesene Threads"
+            },
+            "title": "Ungelesene Threads"
+        }
     },
     "status": {
         "set_status": {
